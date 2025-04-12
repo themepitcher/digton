@@ -1,0 +1,30 @@
+/* header */
+.header-top {
+    background-color: $secondary-color;
+    padding: 10px 0;
+    .header-left {
+        .header-email {
+            margin-right: 30px;
+        }
+        .email-icon,
+        .location-icon {
+            color: $primary-color;
+            margin-right: 5px;
+        }
+        a {
+            color: $white-color;
+        }
+    }
+    .header-right {
+        .header-social {
+            float: right;
+            li {
+                display: inline-block;
+                margin-left: 20px;
+                a {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+/*-------------------------------------------------------------
+theme name: 
+theme uri: 
+author: 
+author uri: 
+description: 
+tags: 
+version: 1.0.0
+text domain: 
+-------------------------------------------------------------*/
+
+/*------------------------------------------------------------- 
+TABLE OF CONTENTS: 
+---------------------------------------------------------------
+>> author css
+>> navbar
+>> header
+>> footer
+>> breadcrumb
+>> accordion
+>> animation
+>> back to top
+>> button 
+>> form
+>> modal
+>> preloader
+>> spacing
+>> theme
+--------------------------------------------------------------*/
+
+// setting
+@import 'settings/variable';
+@import 'settings/mixin';
+
+// base
+@import 'base/base';
+
+// layout
+@import 'layout/navbar';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/breadcrumb';
+
+// module
+@import 'module/accordion';
+@import 'module/animation';
+@import 'module/back-to-top';
+@import 'module/button';
+@import 'module/form';
+@import 'module/modal';
+@import 'module/preloader';
+@import 'module/spacing';
+
+// theme 
+@import 'theme/theme';

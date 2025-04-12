@@ -1,0 +1,72 @@
+/* accordion */
+.accordion-wrapper {
+    .card {
+        +.card {
+            margin-top: 30px;
+        }
+
+        border: none;
+        background-color: transparent;
+
+        .card-header {
+            background-color: transparent;
+            padding: 0;
+            border: none;
+
+            a {
+                display: block;
+                font-size: 20px;
+                line-height: 1.15;
+                font-weight: 500;
+                font-family: $primary-font;
+                background-color: transparent;
+                color: $secondary-color;
+                border: 1px solid $border-color;
+                border-radius: 5px;
+                padding: 20px 30px;
+                cursor: pointer;
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    right: 30px;
+                    top: 20px;
+                    content: "\f056";
+                    font-family: "fontawesome";
+
+                    @include screen-360 {
+                        right: 20px;
+                    }
+                }
+
+                &[aria-expanded="false"] {
+                    &:after {
+                        color: $secondary-color;
+                        content: "\f055";
+                    }
+                }
+
+                &[aria-expanded="true"] {
+                    color: $secondary-color;
+                    border: 1px solid $border-color;
+                    background: $white-color;
+                    border-radius: 5px 5px 0 0;
+                    border-bottom: 1px solid $white-color;
+
+                    &:after {
+                        color: $paragraph-color;
+                    }
+                }
+            }
+        }
+
+        .card-body {
+            background-color: $white-color;
+            padding: 5px 30px 20px;
+            color: $paragraph-color;
+            border-radius: 0 0 5px 5px;
+            border: 1px solid $border-color;
+            border-top: 1px solid transparent;
+        }
+    }
+}

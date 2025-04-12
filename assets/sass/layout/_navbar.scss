@@ -1,0 +1,150 @@
+/* navbar */
+nav {
+    display: flex !important;
+    justify-content: flex-end;
+
+    // home menu
+    .main-menu {
+        li {
+            display: inline-block;
+            position: relative;
+            margin: 0 15px;
+            line-height: 1.7;
+            z-index: 1;
+
+            &.has-submenu {
+                &::after {
+                    content: '\2b';
+                    font-family: 'FontAwesome';
+                    font-weight: 900;
+                    color: $secondary-color;
+                    margin-left: 2px;
+                    transition: $transition;
+
+                    @include tablet {
+                        display: none;
+                    }
+
+                    @include landscape-phone {
+                        display: none;
+                    }
+
+                    @include portrait-phone {
+                        display: none;
+                    }
+                }
+
+            }
+
+            a {
+                color: $secondary-color;
+                padding: 20px 0;
+                font-weight: 600;
+                display: inline-block;
+                font-size: 16px;
+                text-transform: capitalize;
+            }
+
+            @include all-desktop {
+
+                // submenu
+                .submenu {
+                    position: absolute;
+                    width: 200px;
+                    top: 125%;
+                    left: 0;
+                    background: $white-color;
+                    border: 1px solid $border-color;
+                    padding: 10px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: $transition;
+
+                    li {
+                        display: block;
+                        margin-right: initial;
+
+                        a {
+                            color: $secondary-color;
+                            display: block;
+                            padding: 7px;
+                            width: 100%;
+
+                            &:hover {
+                                color: $primary-color;
+                            }
+                        }
+
+                    }
+                }
+
+                &:hover {
+                    &.has-submenu {
+                        &::after {
+                            color: $primary-color;
+                        }
+                    }
+
+                    a {
+                        color: $primary-color;
+
+                        @include tablet {
+                            color: $white-color;
+                        }
+
+                    }
+
+                    .submenu {
+                        top: 115%;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// phone menu
+.mean-container {
+    .mean-nav {
+        background: $primary-color;
+
+        @include tablet {
+            margin-top: 90px;
+        }
+
+        @include landscape-phone {
+            margin-top: 60px;
+        }
+
+        @include portrait-phone {
+            margin-top: 50px;
+        }
+    }
+
+    .mean-bar {
+        z-index: 0;
+
+        a.meanmenu-reveal {
+            background: $primary-color;
+            top: 8px;
+            right: 20px !important;
+
+            @include tablet {
+                top: 15px;
+            }
+
+            @include landscape-phone {
+                top: 2px;
+            }
+
+            @include portrait-phone {
+                top: -3px;
+
+            }
+        }
+    }
+
+}

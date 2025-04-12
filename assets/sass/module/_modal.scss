@@ -1,0 +1,83 @@
+/* modal */
+#search-modal {
+	background: rgba($black-color, 0.65);
+
+	button {
+		border: none;
+		background: transparent;
+	}
+
+	button span {
+		color: $white-color;
+		position: absolute;
+		top: 50px;
+		right: 50px;
+		font-size: 50px;
+	}
+	  
+	.modal-dialog {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		border: none;
+		outline: 0;
+	  }
+	  
+	.modal-dialog .modal-content {
+		background: 0 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		border: none;
+	  }
+	  
+	.modal-dialog .modal-content form {
+		max-width: 550px;
+		position: relative;
+	  }
+	  
+	.modal-dialog .modal-content form input {
+		width: 100%;
+		font-size: 30px;
+		border: none;
+		border-bottom: 2px solid rgba($white-color, 0.9);
+		background: 0 0;
+		color: #fff;
+		padding-bottom: 12px;
+		padding-right: 40px;
+		outline: none;
+	  }
+	  
+	.modal-dialog .modal-content form input::-webkit-input-placeholder {
+		font-size: 30px;
+		color: rgba($white-color, 0.9);
+	  }
+	  
+	.modal-dialog .modal-content form input:-ms-input-placeholder {
+		font-size: 30px;
+		color: rgba($white-color, 0.9);
+	  }
+	  
+	.modal-dialog .modal-content form input::-ms-input-placeholder {
+		font-size: 30px;
+		color: rgba($white-color, 0.9);
+	  }
+	  
+	.modal-dialog .modal-content form input::placeholder {
+		font-size: 30px;
+		color: rgba($white-color, 0.9);
+	  }
+	  
+	.modal-dialog .modal-content form button {
+		position: absolute;
+		top: 10px;
+		right: 0;
+		margin-bottom: 3px;
+		font-size: 24px;
+		color: rgba($white-color, 0.9);
+		background: 0 0;
+		border: none;
+		cursor: pointer;
+	  }	
+}
