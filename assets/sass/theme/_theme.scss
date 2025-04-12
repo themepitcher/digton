@@ -1,8 +1,5 @@
 /* theme */
 .menu-area {
-    position: absolute;
-    width: 100%;
-    z-index: 1;
     padding: 10px 0;
     .nav-right-content {
         float: right;
@@ -14,40 +11,6 @@
         .search-btn {
             color: $secondary-color;
             font-size: 16px;
-        }
-    }
-}
-
-.hero-area {
-    position: relative;
-    background-image: url('../images/hero-bg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 150px;
-    .button-group {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-    }
-}
-
-.video-wrapper {
-    a {
-        color: $primary-color;
-        font-weight: 500;
-        .video-btn {
-            width: 50px;
-            height: 50px;
-            font-size: 20px;
-            line-height: 50px;
-            background-color: $white-color;
-            box-shadow: $box-shadow;
-            border-radius: 50%;
-            display: inline-block;
-            text-align: center;
-            margin-right: 5px;
-            padding-left: 3px;
         }
     }
 }

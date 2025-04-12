@@ -23,19 +23,19 @@
 		transform: translate(-50%, -50%);
 		border: none;
 		outline: 0;
-	  }
+	}
 	  
 	.modal-dialog .modal-content {
 		background: 0 0;
 		-webkit-box-shadow: none;
 		box-shadow: none;
 		border: none;
-	  }
+	}
 	  
 	.modal-dialog .modal-content form {
 		max-width: 550px;
 		position: relative;
-	  }
+	}
 	  
 	.modal-dialog .modal-content form input {
 		width: 100%;
@@ -47,27 +47,27 @@
 		padding-bottom: 12px;
 		padding-right: 40px;
 		outline: none;
-	  }
+	}
 	  
 	.modal-dialog .modal-content form input::-webkit-input-placeholder {
 		font-size: 30px;
 		color: rgba($white-color, 0.9);
-	  }
+	}
 	  
 	.modal-dialog .modal-content form input:-ms-input-placeholder {
 		font-size: 30px;
 		color: rgba($white-color, 0.9);
-	  }
+	}
 	  
 	.modal-dialog .modal-content form input::-ms-input-placeholder {
 		font-size: 30px;
 		color: rgba($white-color, 0.9);
-	  }
+	}
 	  
 	.modal-dialog .modal-content form input::placeholder {
 		font-size: 30px;
 		color: rgba($white-color, 0.9);
-	  }
+	}
 	  
 	.modal-dialog .modal-content form button {
 		position: absolute;
@@ -79,5 +79,5 @@
 		background: 0 0;
 		border: none;
 		cursor: pointer;
-	  }	
+	}	
 }

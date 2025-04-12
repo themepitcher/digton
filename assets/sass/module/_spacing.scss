@@ -1,41 +1,41 @@
 /* spacing */
-.padding-top-10 {
+.pt-10 {
     padding-top: 10px;
 }
 
-.padding-top-20 {
+.pt-20 {
     padding-top: 20px;
 }
 
-.padding-top-30 {
+.pt-30 {
     padding-top: 30px;
 }
 
-.padding-top-40 {
+.pt-40 {
     padding-top: 40px;
 }
 
-.padding-top-50 {
+.pt-50 {
     padding-top: 50px;
 }
 
-.padding-top-60 {
+.pt-60 {
     padding-top: 60px;
 }
 
-.padding-top-70 {
+.pt-70 {
     padding-top: 70px;
 }
 
-.padding-top-80 {
+.pt-80 {
     padding-top: 80px;
 }
 
-.padding-top-90 {
+.pt-90 {
     padding-top: 90px;
 }
 
-.padding-top-100 {
+.pt-100 {
     padding-top: 100px;
 
     @include all-phone {
@@ -43,7 +43,7 @@
     }
 }
 
-.padding-top-105 {
+.pt-105 {
     padding-top: 105px;
 
     @include all-phone {
@@ -51,7 +51,7 @@
     }
 }
 
-.padding-top-110 {
+.pt-110 {
     padding-top: 110px;
 
     @include all-phone {
@@ -59,7 +59,7 @@
     }
 }
 
-.padding-top-115 {
+.pt-115 {
     padding-top: 115px;
 
     @include all-phone {
@@ -67,7 +67,7 @@
     }
 }
 
-.padding-top-120 {
+.pt-120 {
     padding-top: 120px;
 
     @include all-phone {
@@ -75,39 +75,39 @@
     }
 }
 
-.padding-bottom-10 {
+.pb-10 {
     padding-bottom: 10px;
 }
 
-.padding-bottom-20 {
+.pb-20 {
     padding-bottom: 20px;
 }
 
-.padding-bottom-30 {
+.pb-30 {
     padding-bottom: 30px;
 }
 
-.padding-bottom-40 {
+.pb-40 {
     padding-bottom: 40px;
 }
 
-.padding-bottom-50 {
+.pb-50 {
     padding-bottom: 50px;
 }
 
-.padding-bottom-60 {
+.pb-60 {
     padding-bottom: 60px;
 }
 
-.padding-bottom-70 {
+.pb-70 {
     padding-bottom: 70px;
 }
 
-.padding-bottom-80 {
+.pb-80 {
     padding-bottom: 80px;
 }
 
-.padding-bottom-90 {
+.pb-90 {
     padding-bottom: 90px;
 
     @include all-phone {
@@ -115,7 +115,7 @@
     }
 }
 
-.padding-bottom-100 {
+.pb-100 {
     padding-bottom: 100px;
 
     @include all-phone {
@@ -123,7 +123,7 @@
     }
 }
 
-.padding-bottom-105 {
+.pb-105 {
     padding-bottom: 105px;
 
     @include all-phone {
@@ -131,7 +131,7 @@
     }
 }
 
-.padding-bottom-110 {
+.pb-110 {
     padding-bottom: 110px;
 
     @include all-phone {
@@ -139,7 +139,7 @@
     }
 }
 
-.padding-bottom-115 {
+.pb-115 {
     padding-bottom: 115px;
 
     @include all-phone {
@@ -147,7 +147,7 @@
     }
 }
 
-.padding-bottom-120 {
+.pb-120 {
     padding-bottom: 120px;
 
     @include all-phone {
@@ -155,193 +155,183 @@
     }
 }
 
-.padding-10 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.py-10 {
+    padding: 10px 0;
 }
 
-.padding-20 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.py-20 {
+    padding: 20px 0;
 }
 
-.padding-30 {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.py-30 {
+    padding: 30px 0;
 }
 
-.padding-40 {
-    padding-top: 40px;
-    padding-bottom: 40px;
+.py-40 {
+    padding: 40px 0;
 }
 
-.padding-50 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+.py-50 {
+    padding: 50px 0;
 }
 
-.padding-60 {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.py-60 {
+    padding: 60px 0;
 }
 
-.padding-70 {
-    padding-top: 70px;
-    padding-bottom: 70px;
+.py-70 {
+    padding: 70px 0;
 }
 
-.padding-80 {
-    padding-top: 80px;
-    padding-bottom: 80px;
+.py-80 {
+    padding: 80px 0;
 }
 
-.padding-90 {
-    padding-top: 90px;
-    padding-bottom: 90px;
+.py-90 {
+    padding: 90px 0;
 }
 
-.padding-100 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.py-100 {
+    padding: 100px 0;
 }
 
-.padding-105 {
-    padding-top: 105px;
-    padding-bottom: 105px;
+.py-105 {
+    padding: 105px 0;
 }
 
-.padding-115 {
-    padding-top: 115px;
-    padding-bottom: 115px;
+.py-110 {
+    padding: 110px 0;
 }
 
-.padding-120 {
-    padding-top: 120px;
-    padding-bottom: 120px;
+.py-115 {
+    padding: 115px 0;
+}
+
+.py-120 {
+    padding: 120px 0;
 
     @include all-phone {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding: 80px 0;
     }
 }
 
 // margin
-.margin-top-10 {
+.mt-10 {
     margin-top: 10px;
 }
 
-.margin-top-20 {
+.mt-20 {
     margin-top: 20px;
 }
 
-.margin-top-30 {
+.mt-30 {
     margin-top: 30px;
 }
 
-.margin-top-40 {
+.mt-40 {
     margin-top: 40px;
 }
 
-.margin-top-50 {
+.mt-50 {
     margin-top: 50px;
 }
 
-.margin-top-60 {
+.mt-60 {
     margin-top: 60px;
 }
 
-.margin-top-70 {
+.mt-70 {
     margin-top: 70px;
 }
 
-.margin-top-80 {
+.mt-80 {
     margin-top: 80px;
 }
 
-.margin-top-90 {
+.mt-90 {
     margin-top: 90px;
 }
 
-.margin-top-100 {
+.mt-100 {
     margin-top: 100px;
 }
 
-.margin-bottom-10 {
+.mb-10 {
     margin-bottom: 10px;
 }
 
-.margin-bottom-20 {
+.mb-20 {
     margin-bottom: 20px;
 }
 
-.margin-bottom-30 {
+.mb-30 {
     margin-bottom: 30px;
 }
 
-.margin-bottom-40 {
+.mb-40 {
     margin-bottom: 40px;
 }
 
-.margin-bottom-50 {
+.mb-50 {
     margin-bottom: 50px;
 }
 
-.margin-bottom-60 {
+.mb-60 {
     margin-bottom: 60px;
 }
 
-.margin-bottom-70 {
+.mb-70 {
     margin-bottom: 70px;
 }
 
-.margin-bottom-80 {
+.mb-80 {
     margin-bottom: 80px;
 }
 
-.margin-bottom-90 {
+.mb-90 {
     margin-bottom: 90px;
 }
 
-.margin-bottom-100 {
+.mb-100 {
     margin-bottom: 100px;
 }
 
-.margin-10 {
+.my-10 {
     margin: 10px 0;
 }
 
-.margin-20 {
+.my-20 {
     margin: 10px 0;
 }
 
-.margin-30 {
+.my-30 {
     margin: 10px 0;
 }
 
-.margin-40 {
+.my-40 {
     margin: 10px 0;
 }
 
-.margin-50 {
+.my-50 {
     margin: 10px 0;
 }
 
-.margin-60 {
+.my-60 {
     margin: 10px 0;
 }
 
-.margin-70 {
+.my-70 {
     margin: 10px 0;
 }
 
-.margin-80 {
+.my-80 {
     margin: 10px 0;
 }
 
-.margin-90 {
+.my-90 {
     margin: 10px 0;
 }
 
-.margin-100 {
+.my-100 {
     margin: 10px 0;
 }

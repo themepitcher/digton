@@ -19,21 +19,16 @@ nav {
                     font-weight: 900;
                     color: $secondary-color;
                     margin-left: 2px;
-                    transition: $transition;
+                    transition: $transition; 
 
                     @include tablet {
                         display: none;
-                    }
+                    } 
 
-                    @include landscape-phone {
-                        display: none;
-                    }
-
-                    @include portrait-phone {
+                    @include all-phone {
                         display: none;
                     }
                 }
-
             }
 
             a {
@@ -46,7 +41,6 @@ nav {
             }
 
             @include all-desktop {
-
                 // submenu
                 .submenu {
                     position: absolute;
@@ -69,7 +63,6 @@ nav {
                             display: block;
                             padding: 7px;
                             width: 100%;
-
                             &:hover {
                                 color: $primary-color;
                             }
@@ -87,11 +80,9 @@ nav {
 
                     a {
                         color: $primary-color;
-
                         @include tablet {
                             color: $white-color;
                         }
-
                     }
 
                     .submenu {
@@ -103,7 +94,6 @@ nav {
             }
         }
     }
-
 }
 
 // phone menu
@@ -126,7 +116,6 @@ nav {
 
     .mean-bar {
         z-index: 0;
-
         a.meanmenu-reveal {
             background: $primary-color;
             top: 8px;
@@ -146,5 +135,4 @@ nav {
             }
         }
     }
-
 }
