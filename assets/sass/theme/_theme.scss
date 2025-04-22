@@ -80,3 +80,73 @@
         padding-left: 5px;
     }
 }
+
+.section-top {
+    .sub-title {
+        color: $secondary-color;
+        font-weight: 500;
+        text-transform: capitalize;
+        text-decoration: underline;
+    }
+    .section-top-btn {
+        text-align: right;
+        @include tablet {
+            text-align: left;
+            margin-top: 30px;
+        }
+        @include all-phone {
+            text-align: left;
+            margin-top: 30px;
+        }
+    }
+}
+
+.single-feature {
+    padding: 40px 30px;
+    border: 1px solid rgba($secondary-color, .1);
+    margin-bottom: 30px;
+    &.margin-top {
+        margin-top: 50px;
+        @include tablet {
+            margin-top: 0;
+        }
+        @include all-phone {
+            margin-top: 0;
+        }
+    }
+
+    .icon {
+        img {
+            width: auto;
+            margin-bottom: 20px;
+        }
+    }
+    h4 {
+        a {
+            color: $secondary-color;
+            transition: $transition;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+    p {
+        margin-top: 20px;
+    }
+}
+
+.page-link-url {
+    color: $paragraph-color;
+    font-weight: 500;
+    margin-top: 15px;
+    display: inline-block;
+    transition: $transition;
+    &:hover {
+        color: $primary-color;
+    }
+    .arrow-icon {
+        font-size: 15px;
+        position: relative;
+        top: .7px;
+    }
+}
