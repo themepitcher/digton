@@ -25,7 +25,9 @@
 
 <body>
     <!-- preloader -->
-    <div class="preloader" id="preloader"></div>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
 
     <!-- modal search -->
     <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -45,7 +47,7 @@
     </div>
 
     <!-- header top starts -->
-    <header class="header-top">
+    <header class="header-top d-none">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
@@ -69,7 +71,7 @@
     </header>
 
     <!-- menu area starts -->
-    <div class="menu-area">
+    <div class="menu-area menu-area-1">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-2">
@@ -112,10 +114,10 @@
                                     <li><a href="team-details.html">team details</a></li>
                                     <li><a href="pricing.html">pricing</a></li>
                                     <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="contact.html">contact</a></li>
                                     <li><a href="404.html">404 page</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -132,15 +134,39 @@
     </div>
     
     <!-- hero area starts -->
-    <section class="hero-area">
+    <section class="hero-area" data-background="assets/images/hero-bg.png">
         <div class="container">
-            
+            <div class="row">
+                <div class="col-lg-10 offset-lg-2">
+                    <h1>creative</h1>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>digital</h1>
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="hero-image" data-background="assets/images/hero-image.png"></div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-4 order-2 order-lg-1">
+                    <div class="hero-video">
+                        <a class="hero-play-btn popup-youtube" href="https://www.youtube.com/watch?v=ZG6tNrxXh1k"><span class="video-btn item-ripple-two"><i class="fa-solid fa-play"></i></span> Watch Intro</a>
+                    </div>
+                </div>
+                <div class="col-lg-8 order-1 order-lg-2">
+                    <h1>agency</h1>
+                </div>
+            </div>
         </div>
     </section>
 
+    
+
     <!-- back to top -->
     <div class="back-to-top">
-        <span><i class="fa fa-angle-up"></i></span>
+        <span><i class="fa-solid fa-angle-up"></i></span>
     </div>
 
     <!-- javascript files -->

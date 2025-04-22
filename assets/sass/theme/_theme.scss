@@ -1,16 +1,82 @@
-/* theme */
-.menu-area {
-    padding: 10px 0;
-    .nav-right-content {
-        float: right;
-        display: flex;
-        align-items: center;
-        .primary-btn {
-            margin-left: 30px;
+/* theme */ 
+.hero-area {
+    background: no-repeat center/cover;
+    padding: 120px 0;
+    @include tablet {
+        padding: 80px 0;
+    }
+    @include all-phone {
+        padding: 60px 0;
+    }
+
+    h1 {
+        color: $white-color;
+        font-size: 160px;
+        text-transform: uppercase;
+        @include screen-1200 {
+            font-size: 140px;
         }
-        .search-btn {
-            color: $secondary-color;
-            font-size: 16px;
+        @include desktop {
+            font-size: 120px;
         }
+        @include tablet {
+            font-size: 100px;
+        }
+        @include all-phone {
+            font-size: 70px;
+        }
+    }
+
+    .hero-image {
+        max-width: 400px;
+        height: 120px;
+        background: no-repeat center/cover;
+        border-radius: 70px;
+        @include screen-1200 {
+            height: 110px;
+        }
+        @include desktop {
+            height: 100px;
+        }
+        @include tablet {
+            height: 90px;
+            margin: 20px 0;
+        }
+        @include all-phone {
+            height: 80px;
+            margin: 20px 0;
+            max-width: 300px;
+        }
+    }
+}
+
+.hero-play-btn {
+    color: $white-color;
+    font-size: 20px;
+    transition: $transition;
+    display: inline-block;
+    @include tablet {
+        margin-top: 20px;
+    }
+    @include all-phone {
+        margin-top: 20px;
+    }
+
+    &:hover {
+        color: $primary-color;
+    }
+
+    .video-btn {
+        color: $primary-color;
+        background-color: $white-color;
+        font-size: 24px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        margin-right: 10px;
+        padding-left: 5px;
     }
 }

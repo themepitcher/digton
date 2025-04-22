@@ -11,13 +11,19 @@ nav {
             margin: 0 15px;
             line-height: 1.7;
             z-index: 1;
+            @include tablet {
+                margin: 0;
+            }
+            @include all-phone {
+                margin: 0;
+            }
 
             &.has-submenu {
                 &::after {
                     content: '\2b';
                     font-family: 'FontAwesome';
                     font-weight: 900;
-                    color: $secondary-color;
+                    color: $white-color;
                     margin-left: 2px;
                     transition: $transition; 
 
@@ -32,12 +38,13 @@ nav {
             }
 
             a {
-                color: $secondary-color;
+                color: $white-color;
                 padding: 20px 0;
                 font-weight: 600;
                 display: inline-block;
                 font-size: 16px;
                 text-transform: capitalize;
+                transition: $transition;
             }
 
             @include all-desktop {
@@ -100,17 +107,12 @@ nav {
 .mean-container {
     .mean-nav {
         background: $primary-color;
-
         @include tablet {
-            margin-top: 90px;
+            margin-top: 55px;
         }
 
-        @include landscape-phone {
-            margin-top: 60px;
-        }
-
-        @include portrait-phone {
-            margin-top: 50px;
+        @include all-phone {
+            margin-top: 55px;
         }
     }
 
@@ -118,21 +120,8 @@ nav {
         z-index: 0;
         a.meanmenu-reveal {
             background: $primary-color;
-            top: 8px;
+            top: 1px;
             right: 20px !important;
-
-            @include tablet {
-                top: 15px;
-            }
-
-            @include landscape-phone {
-                top: 2px;
-            }
-
-            @include portrait-phone {
-                top: -3px;
-
-            }
         }
     }
 }

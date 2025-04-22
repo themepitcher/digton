@@ -39,12 +39,18 @@
     $(window).on('scroll', function () {
 
         // back to top scroll
-        var ScrollTop = $('.back-to-top');
-
-        if ($(window).scrollTop() > 1000) {
-            ScrollTop.fadeIn(1000);
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 500) {
+            $(".back-to-top").fadeIn("slow");
         } else {
-            ScrollTop.fadeOut(1000);
+            $(".back-to-top").fadeOut("slow");
+        }
+
+        // navbar fix
+        const headerHeight = $(".header-top").outerHeight();
+        if ($(this).scrollTop() > headerHeight) {
+            $(".menu-area").addClass("fixed-top");
+        } else {
+            $(".menu-area").removeClass("fixed-top");
         }
 
     });
@@ -59,10 +65,11 @@
         preLoder.fadeOut(0);
 
         // back to top animate
-        $(".back-to-top").on('click', function () {
-            $("html").animate({
-                "scrollTop": "0"
-            }, 1000);
+        $(".back-to-top").click(function () {
+            $("html, body").animate({ 
+                scrollTop: 0 
+            }, 1500);
+            return false;
         });
 
     });

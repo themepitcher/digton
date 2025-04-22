@@ -52,6 +52,11 @@ a.meanmenu-reveal {
 	margin-top: 3px;
 }
 
+.mean-container a.meanmenu-reveal span span {
+	position: relative;
+	top: 6px;
+}
+
 .mean-container .mean-nav {
 	float: left;
 	width: 100%;

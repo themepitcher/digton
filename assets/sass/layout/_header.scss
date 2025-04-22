@@ -1,4 +1,75 @@
 /* header */
+.menu-area {
+    padding: 10px 0;
+    position: relative;
+    &.menu-area-1 {
+        background-color: $secondary-color;
+        border-bottom: 1px solid #272b40;
+    }
+    &.fixed-top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        animation: fixed_top 0.8s;
+    }
+    .logo-area {
+        img {
+            max-width: 160px;
+        }
+    }
+    .nav-right-content {
+        float: right;
+        display: flex;
+        align-items: center;
+        @include tablet {
+            position: absolute;
+            top: 9px;
+            right: 90px;
+            z-index: 1;
+        }
+        @include landscape-phone {
+            position: absolute;
+            top: 9px;
+            right: 90px;
+            z-index: 1;
+        }
+        @include portrait-phone {
+            position: absolute;
+            top: 23px;
+            right: 90px;
+            z-index: 1;
+        }
+        @include screen-360 {
+            position: absolute;
+            top: 23px;
+            right: 90px;
+            z-index: 1;
+        }
+
+        .primary-btn {
+            margin-left: 30px;
+            @include tablet {
+                margin-left: 20px;
+            }
+            @include landscape-phone {
+                margin-left: 20px;
+            }
+            @include portrait-phone {
+                display: none;;
+            }
+            @include screen-360 {
+                display: none;
+            }
+        }
+        .search-btn {
+            color: $white-color;
+            font-size: 16px;
+        }
+    }
+}
+
 .header-top {
     background-color: $secondary-color;
     padding: 10px 0;
