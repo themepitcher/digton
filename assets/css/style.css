@@ -46,8 +46,8 @@ h2 {
   line-height: 1.2; }
 
 h3 {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 36px;
+  font-weight: 600;
   line-height: 1.2; }
 
 h4 {
@@ -1059,7 +1059,9 @@ nav {
   color: #0F142B;
   font-weight: 500;
   text-transform: capitalize;
-  text-decoration: underline; }
+  text-decoration: underline;
+  margin-bottom: 10px;
+  display: inline-block; }
 
 .section-top .section-top-btn {
   text-align: right; }
@@ -1111,3 +1113,62 @@ nav {
     font-size: 15px;
     position: relative;
     top: .7px; }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about-images {
+    margin-bottom: 50px; } }
+
+@media (max-width: 767.98px) {
+  .about-images {
+    margin-bottom: 50px; } }
+
+.about-images .image-2.margin-top {
+  margin-top: 50px; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .about-images .image-2.margin-top {
+      margin-top: 0; } }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .about-images .image-2.margin-top {
+      margin-top: 0; } }
+  @media (max-width: 575.98px) {
+    .about-images .image-2.margin-top {
+      margin-top: 30px; } }
+
+.single-portfolio {
+  position: relative;
+  margin-bottom: 30px; }
+  .single-portfolio:hover .hover-state {
+    opacity: 1;
+    visibility: visible;
+    bottom: 30px; }
+  .single-portfolio .hover-state {
+    background-color: #ffffff;
+    padding: 20px 50px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+    visibility: hidden; }
+    .single-portfolio .hover-state .title {
+      color: #0F142B;
+      -webkit-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in; }
+      .single-portfolio .hover-state .title:hover {
+        color: #3F54D3; }
+    .single-portfolio .hover-state .category {
+      color: #666872;
+      display: inline-block;
+      margin-top: 10px;
+      -webkit-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in; }
+      .single-portfolio .hover-state .category:hover {
+        color: #3F54D3; }

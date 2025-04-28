@@ -87,6 +87,8 @@
         font-weight: 500;
         text-transform: capitalize;
         text-decoration: underline;
+        margin-bottom: 10px;
+        display: inline-block;
     }
     .section-top-btn {
         text-align: right;
@@ -148,5 +150,70 @@
         font-size: 15px;
         position: relative;
         top: .7px;
+    }
+}
+
+.about-images {
+    @include tablet {
+        margin-bottom: 50px;
+    }
+    @include all-phone {
+        margin-bottom: 50px;
+    }
+
+    .image-2 {
+        &.margin-top {
+            margin-top: 50px;
+            @include tablet {
+                margin-top: 0;
+            }
+            @include landscape-phone {
+                margin-top: 0;
+            }
+            @include portrait-phone {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+.single-portfolio {
+    position: relative;
+    margin-bottom: 30px;
+    &:hover {
+        .hover-state {
+            opacity: 1;
+            visibility: visible;
+            bottom: 30px;
+        }
+    }
+
+    .hover-state {
+        background-color: $white-color;
+        padding: 20px 50px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        transition: $transition;
+        opacity: 0;
+        visibility: hidden;
+        .title {
+            color: $secondary-color;
+            transition: $transition;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        .category {
+            color: $paragraph-color;
+            display: inline-block;
+            margin-top: 10px;
+            transition: $transition;
+            &:hover {
+                color: $primary-color;
+            }
+        }
     }
 }
