@@ -52,7 +52,7 @@ h3 {
 
 h4 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2; }
 
 h5 {
@@ -130,9 +130,9 @@ nav {
       font-weight: 900;
       color: #ffffff;
       margin-left: 2px;
-      -webkit-transition: all 0.3s ease-in;
-      -o-transition: all 0.3s ease-in;
-      transition: all 0.3s ease-in; }
+      -webkit-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in; }
       @media (min-width: 768px) and (max-width: 991.98px) {
         nav .main-menu li.has-submenu::after {
           display: none; } }
@@ -146,9 +146,9 @@ nav {
       display: inline-block;
       font-size: 16px;
       text-transform: capitalize;
-      -webkit-transition: all 0.3s ease-in;
-      -o-transition: all 0.3s ease-in;
-      transition: all 0.3s ease-in; }
+      -webkit-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in; }
     @media (min-width: 992px) {
       nav .main-menu li .submenu {
         position: absolute;
@@ -160,9 +160,9 @@ nav {
         padding: 10px;
         opacity: 0;
         visibility: hidden;
-        -webkit-transition: all 0.3s ease-in;
-        -o-transition: all 0.3s ease-in;
-        transition: all 0.3s ease-in; }
+        -webkit-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in; }
         nav .main-menu li .submenu li {
           display: block;
           margin-right: initial; }
@@ -550,9 +550,9 @@ nav {
   border-radius: 50%;
   text-align: center;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   z-index: 9999;
   display: none; }
   @media (min-width: 768px) and (max-width: 991.98px) {
@@ -575,9 +575,9 @@ nav {
   text-align: center;
   display: inline-block;
   padding: 13px 35px;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in; }
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
   .primary-btn:hover {
     color: #ffffff;
     background-color: #0F142B; }
@@ -1030,9 +1030,9 @@ nav {
 .hero-play-btn {
   color: #ffffff;
   font-size: 20px;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   display: inline-block; }
   @media (min-width: 768px) and (max-width: 991.98px) {
     .hero-play-btn {
@@ -1091,9 +1091,9 @@ nav {
     margin-bottom: 20px; }
   .single-feature h4 a {
     color: #0F142B;
-    -webkit-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in; }
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in; }
     .single-feature h4 a:hover {
       color: #3F54D3; }
   .single-feature p {
@@ -1104,9 +1104,9 @@ nav {
   font-weight: 500;
   margin-top: 15px;
   display: inline-block;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in; }
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
   .page-link-url:hover {
     color: #3F54D3; }
   .page-link-url .arrow-icon {
@@ -1143,7 +1143,8 @@ nav {
     bottom: 30px; }
   .single-portfolio .hover-state {
     background-color: #ffffff;
-    padding: 20px 50px;
+    padding: 20px;
+    width: 70%;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -1151,24 +1152,79 @@ nav {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     text-align: center;
-    -webkit-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
     opacity: 0;
     visibility: hidden; }
     .single-portfolio .hover-state .title {
       color: #0F142B;
-      -webkit-transition: all 0.3s ease-in;
-      -o-transition: all 0.3s ease-in;
-      transition: all 0.3s ease-in; }
+      -webkit-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in; }
       .single-portfolio .hover-state .title:hover {
         color: #3F54D3; }
     .single-portfolio .hover-state .category {
       color: #666872;
       display: inline-block;
-      margin-top: 10px;
-      -webkit-transition: all 0.3s ease-in;
-      -o-transition: all 0.3s ease-in;
-      transition: all 0.3s ease-in; }
+      margin-top: 5px;
+      -webkit-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in; }
       .single-portfolio .hover-state .category:hover {
         color: #3F54D3; }
+
+.single-member {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px; }
+  .single-member:hover .hover-state {
+    opacity: 1;
+    visibility: visible; }
+  .single-member .hover-state {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in; }
+    .single-member .hover-state .member-content {
+      position: absolute;
+      bottom: 20px;
+      left: 20px; }
+      .single-member .hover-state .member-content .title {
+        color: #0F142B;
+        -webkit-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in; }
+        .single-member .hover-state .member-content .title:hover {
+          color: #3F54D3; }
+      .single-member .hover-state .member-content .designation {
+        display: inline-block;
+        margin-top: 5px;
+        text-transform: capitalize; }
+    .single-member .hover-state .social-links {
+      position: absolute;
+      top: 20px;
+      right: 20px; }
+      .single-member .hover-state .social-links li {
+        margin-bottom: 10px; }
+        .single-member .hover-state .social-links li a {
+          color: #ffffff;
+          background-color: #000000;
+          width: 30px;
+          height: 30px;
+          line-height: 32px;
+          border-radius: 50%;
+          text-align: center;
+          display: inline-block;
+          -webkit-transition: all 0.2s ease-in;
+          -o-transition: all 0.2s ease-in;
+          transition: all 0.2s ease-in; }
+          .single-member .hover-state .social-links li a:hover {
+            background-color: #3F54D3; }

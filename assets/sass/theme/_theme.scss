@@ -190,7 +190,8 @@
 
     .hover-state {
         background-color: $white-color;
-        padding: 20px 50px;
+        padding: 20px;
+        width: 70%;
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -209,10 +210,73 @@
         .category {
             color: $paragraph-color;
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 5px;
             transition: $transition;
             &:hover {
                 color: $primary-color;
+            }
+        }
+    }
+}
+
+.single-member {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    &:hover {
+        .hover-state {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .hover-state {
+        background-color: rgba($white-color, .8);
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+        opacity: 0;
+        visibility: hidden;
+        transition: $transition;
+        .member-content {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            .title {
+                color: $secondary-color;
+                transition: $transition;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+            .designation {
+                display: inline-block;
+                margin-top: 5px;
+                text-transform: capitalize;
+            }
+        }
+
+        .social-links {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            li {
+                margin-bottom: 10px;
+                a {
+                    color: $white-color;
+                    background-color: $black-color;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 32px;
+                    border-radius: 50%;
+                    text-align: center;
+                    display: inline-block;
+                    transition: $transition;
+                    &:hover {
+                        background-color: $primary-color;
+                    }
+                }
             }
         }
     }
