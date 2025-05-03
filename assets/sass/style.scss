@@ -18,19 +18,19 @@ TABLE OF CONTENTS:
 >> footer
 >> breadcrumb
 >> accordion
->> animation
 >> back to top
 >> button 
 >> form
 >> modal
 >> preloader
+>> animation
 >> spacing
 >> theme
 --------------------------------------------------------------*/
 
 // setting
-@import 'settings/variable';
-@import 'settings/mixin';
+@import 'setting/variable';
+@import 'setting/mixin';
 
 // base
 @import 'base/base';
@@ -43,13 +43,13 @@ TABLE OF CONTENTS:
 
 // module
 @import 'module/accordion';
-@import 'module/animation';
 @import 'module/back-to-top';
 @import 'module/button';
 @import 'module/form';
 @import 'module/modal';
 @import 'module/preloader';
-@import 'module/spacing';
 
 // theme 
+@import 'theme/animation';
+@import 'theme/spacing';
 @import 'theme/theme';
