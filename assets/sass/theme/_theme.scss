@@ -1,14 +1,6 @@
 /* theme */ 
 .hero-area {
     background: no-repeat center/cover;
-    padding: 120px 0;
-    @include tablet {
-        padding: 80px 0;
-    }
-    @include all-phone {
-        padding: 60px 0;
-    }
-
     h1 {
         color: $white-color;
         font-size: 160px;
@@ -89,6 +81,17 @@
         text-decoration: underline;
         margin-bottom: 10px;
         display: inline-block;
+        &.white-color {
+            color: $white-color;
+        }
+    }
+    .title {
+        &.white-color {
+            color: $white-color;
+        }
+    }
+    p.white-color {
+        color: $white-color;
     }
     .section-top-btn {
         text-align: right;
@@ -105,7 +108,7 @@
 
 .single-feature {
     padding: 40px 30px;
-    border: 1px solid rgba($secondary-color, .1);
+    border: 1px solid $border-color;
     margin-bottom: 30px;
     &.margin-top {
         margin-top: 50px;
@@ -280,4 +283,8 @@
             }
         }
     }
+}
+
+.newsletter-area {
+    background: no-repeat center/cover;
 }

@@ -156,7 +156,7 @@ nav {
         top: 125%;
         left: 0;
         background: #ffffff;
-        border: 1px solid #eaeaea;
+        border: 1px solid #e5e5e5;
         padding: 10px;
         opacity: 0;
         visibility: hidden;
@@ -208,7 +208,7 @@ nav {
   position: relative; }
   .menu-area.menu-area-1 {
     background-color: #0F142B;
-    border-bottom: 1px solid #272b40; }
+    border-bottom: 1px solid rgba(229, 229, 229, 0.2); }
   .menu-area.fixed-top {
     position: fixed;
     top: 0;
@@ -338,6 +338,29 @@ nav {
     background-color: #0F142B; }
 
 /* form */
+.subscribe-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .subscribe-form form input {
+    width: 70%;
+    padding: 20px;
+    background-color: #ffffff;
+    border: none; }
+    @media (max-width: 575.98px) {
+      .subscribe-form form input {
+        width: 65%; } }
+  .subscribe-form form button {
+    width: 30%;
+    padding: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #3F54D3;
+    border: none; }
+    @media (max-width: 575.98px) {
+      .subscribe-form form button {
+        width: 35%; } }
+
 /* modal */
 #search-modal {
   background-color: #000000; }
@@ -385,7 +408,7 @@ nav {
     border: none;
     border-bottom: 2px solid rgba(255, 255, 255, 0.9);
     background: 0 0;
-    color: #fff;
+    color: #ffffff;
     padding-bottom: 12px;
     padding-right: 40px;
     outline: none; }
@@ -932,14 +955,7 @@ nav {
 
 /* theme */
 .hero-area {
-  background: no-repeat center/cover;
-  padding: 120px 0; }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    .hero-area {
-      padding: 80px 0; } }
-  @media (max-width: 767.98px) {
-    .hero-area {
-      padding: 60px 0; } }
+  background: no-repeat center/cover; }
   .hero-area h1 {
     color: #ffffff;
     font-size: 160px;
@@ -1012,6 +1028,14 @@ nav {
   text-decoration: underline;
   margin-bottom: 10px;
   display: inline-block; }
+  .section-top .sub-title.white-color {
+    color: #ffffff; }
+
+.section-top .title.white-color {
+  color: #ffffff; }
+
+.section-top p.white-color {
+  color: #ffffff; }
 
 .section-top .section-top-btn {
   text-align: right; }
@@ -1026,7 +1050,7 @@ nav {
 
 .single-feature {
   padding: 40px 30px;
-  border: 1px solid rgba(15, 20, 43, 0.1);
+  border: 1px solid #e5e5e5;
   margin-bottom: 30px; }
   .single-feature.margin-top {
     margin-top: 50px; }
@@ -1178,3 +1202,6 @@ nav {
           transition: all 0.2s ease-in; }
           .single-member .hover-state .social-links li a:hover {
             background-color: #3F54D3; }
+
+.newsletter-area {
+  background: no-repeat center/cover; }

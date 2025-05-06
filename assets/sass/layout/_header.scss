@@ -4,7 +4,7 @@
     position: relative;
     &.menu-area-1 {
         background-color: $secondary-color;
-        border-bottom: 1px solid #272b40;
+        border-bottom: 1px solid rgba($border-color, .2);
     }
     &.fixed-top {
         position: fixed;
