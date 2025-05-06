@@ -288,3 +288,21 @@
 .newsletter-area {
     background: no-repeat center/cover;
 }
+
+.single-counter {
+    background-color: $primary-color;
+    margin-bottom: 30px;
+    padding: 40px 30px;
+    position: relative;
+
+    h3, h5 {
+        color: $white-color;
+    }
+
+    .counter-icon {
+        width: auto;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+}

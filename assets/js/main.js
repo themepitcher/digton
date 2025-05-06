@@ -1,6 +1,6 @@
-(function ($) {
-    
+(function ($) {    
     "use strict"
+
     $(document).ready(function () {
 
         // data background
@@ -33,7 +33,11 @@
             fixedContentPos: false
         });
         
-        
+        // counter up 
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1500
+        });
 
     });
 

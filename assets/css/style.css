@@ -56,8 +56,8 @@ h4 {
   line-height: 1.2; }
 
 h5 {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 1.2; }
 
 h6 {
@@ -1205,3 +1205,16 @@ nav {
 
 .newsletter-area {
   background: no-repeat center/cover; }
+
+.single-counter {
+  background-color: #3F54D3;
+  margin-bottom: 30px;
+  padding: 40px 30px;
+  position: relative; }
+  .single-counter h3, .single-counter h5 {
+    color: #ffffff; }
+  .single-counter .counter-icon {
+    width: auto;
+    position: absolute;
+    top: 20px;
+    right: 30px; }
