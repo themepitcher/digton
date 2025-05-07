@@ -1,5 +1,5 @@
 /* form */
-.subscribe-form {
+.newsletter-form {
     form {
         display: flex;
         input {
@@ -20,6 +20,33 @@
             border: none;
             @include portrait-phone {
                 width: 35%;
+            }
+        }
+    }
+}
+
+.footer-form {
+    form {
+        display: flex;
+        input {
+            width: 70%;
+            padding: 15px;
+            color: $white-color;
+            background-color: #353862;
+            border: none;
+            @include landscape-phone {
+                width: 60%;
+            }
+        }
+        button {
+            width: 30%;
+            padding: 15px;
+            font-weight: 500;
+            color: $white-color;
+            background-color: $primary-color;
+            border: none;
+            @include landscape-phone {
+                width: 40%;
             }
         }
     }

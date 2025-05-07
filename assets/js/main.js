@@ -8,9 +8,8 @@
             $(this).css("background-image", "url(" + $(this).attr("data-background") + ")");
         });
 
-
         // mobile menu
-        $('#mobile-menu').meanmenu({
+        $('nav').meanmenu({
             meanMenuContainer: '.mobile-menu',
             meanScreenWidth: "991.98",
             onePage: false

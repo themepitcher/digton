@@ -4,7 +4,7 @@
     position: relative;
     &.menu-area-1 {
         background-color: $secondary-color;
-        border-bottom: 1px solid rgba($border-color, .2);
+        border-bottom: 1px solid rgba($border-color, .1);
     }
     &.fixed-top {
         position: fixed;
@@ -17,6 +17,7 @@
     .logo-area {
         img {
             max-width: 160px;
+            display: inline-block;
         }
     }
     .nav-right-content {

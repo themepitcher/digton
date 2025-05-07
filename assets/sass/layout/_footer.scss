@@ -1,1 +1,115 @@
 /* footer */
+.footer-area {
+    background-color: $secondary-color;
+}
+
+.footer-widget {
+    margin-bottom: 30px;
+    .footer-logo {
+        img {
+            max-width: 160px;
+            display: inline-block;
+        }
+    }
+    p {
+        color: #B2B3C2;
+    }
+    .title {
+        color: $white-color;
+    }
+    .nav-links {
+        li {
+            +li {
+                margin-top: 10px;
+            }
+            a {
+                color: #B2B3C2;
+                text-transform: capitalize;
+                transition: $transition;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .instagram-post {
+        img {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.copyright-area {
+    border-top: 1px solid rgba($border-color, .1);
+    @include tablet {
+        text-align: center;
+    }
+    @include all-phone {
+        text-align: center;
+    }
+    .copyright-text {
+        span {
+            color: #B2B3C2;
+            text-transform: capitalize;
+            a {
+                color: $white-color;
+                font-weight: 600;
+                text-transform: lowercase;
+                transition: $transition;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.footer-social {
+    @include tablet {
+        margin: 20px 0;
+    }
+    @include all-phone {
+        margin: 20px 0;
+    }
+    li {
+        display: inline-block;
+        margin: 0 5px;
+        a {
+            color: $white-color;
+            background-color: #353862;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            display: inline-block;
+            transition: $transition;
+            &:hover {
+                background-color: $primary-color;
+            }
+        }
+    }
+}
+
+.footer-menu {
+    text-align: right;
+    @include tablet {
+        text-align: center;
+    }
+    @include all-phone {
+        text-align: center;
+    }
+    li {
+        display: inline-block;
+        +li {
+            margin-left: 10px;
+        }
+        a {
+            color: #B2B3C2;
+            text-transform: capitalize;
+            transition: $transition;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
