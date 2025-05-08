@@ -285,6 +285,15 @@
     }
 }
 
+.faq-image {
+    @include tablet {
+        margin-top: 30px;
+    }
+    @include all-phone {
+        margin-top: 30px;
+    }
+}
+
 .newsletter-area {
     background: no-repeat center/cover;
 }

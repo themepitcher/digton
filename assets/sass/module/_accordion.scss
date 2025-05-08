@@ -1,1 +1,44 @@
 /* accordion */
+.accordion-area {  
+    .accordion-item {
+        border: 1px solid transparent;
+        transition: $transition;  
+        +.accordion-item {
+            margin-top: 30px;
+        }
+        &.active {
+            .accordion-header {
+                background-color: $primary-color;
+                .title {
+                    color: $white-color;
+                }
+                .icon {
+                    color: $white-color;
+                    transform: rotate(180deg);
+                }
+            }  
+            .accordion-content {
+                display: block;
+                padding: 20px 40px;
+                background-color: $white-color;
+            }
+        }
+    }
+  
+    .accordion-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $white-color;
+        border: 1px solid $border-color;
+        padding: 20px;
+        cursor: pointer;
+        .icon{
+            color: $secondary-color;
+        }
+    }
+    .accordion-content {
+        display: none;
+    }
+}
+  
