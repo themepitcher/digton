@@ -49,6 +49,28 @@
             }
         });
 
+        // testimonial slider
+        $('.testimonial-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            speed: 1000,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: false,
+            arrows: true,
+            prevArrow: '<span class="prev-arrow"><i class="fa-solid fa-arrow-left-long"></i></span>',
+            nextArrow: '<span class="next-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>',
+            responsive: [{
+                breakpoint: 992,
+                settings: {
+                    arrows: false,
+                    }
+                },
+            ]
+        });
+
     });
 
     $(window).on('scroll', function () {
