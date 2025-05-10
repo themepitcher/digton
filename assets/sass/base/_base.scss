@@ -11,6 +11,9 @@ h1 {
     font-size: 70px;
     font-weight: 900;
     line-height: 1.3;
+    @include all-phone {
+        font-size: 60px;
+    }
 }
 
 h2 {

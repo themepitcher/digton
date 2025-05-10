@@ -1,7 +1,7 @@
 /* theme */ 
 .hero-area {
     background: no-repeat center/cover;
-    h1 {
+    .title {
         color: $white-color;
         font-size: 160px;
         text-transform: uppercase;
@@ -42,18 +42,102 @@
     }
 }
 
+.hero-area-2 {
+    background: no-repeat center/cover;
+    padding: 200px 0 140px;
+    @include tablet{
+        padding: 200px 0 120px
+    }
+    @include all-phone {
+        padding: 200px 0 80px
+    }
+    .hero-content {
+        .title {
+            @include desktop {
+                font-size: 60px;
+            }
+        }
+        .hero-shape {
+            width: 200px;
+            position: relative;
+            top: -40px;
+            left: -40px;
+            @include desktop {
+                left: 0;
+            }
+            @include tablet {
+                top: -30px;
+                left: 0;
+            }
+            @include all-phone {
+                width: 150px;
+                top: -20px;
+                left: 0;
+            }
+        }
+        p {
+            width: 80%;
+            @include all-phone {
+                width: 100%;
+            }
+        }
+    }
+
+    .hero-image {
+        position: relative;
+        @include tablet {
+            margin-top: 40px;
+        }
+        @include all-phone {
+            margin-top: 40px;
+        }
+        .play-button {
+            position: absolute;
+            bottom: -70px;
+            left: -70px;
+            width: 140px;
+            height: 140px;
+            background: no-repeat center/cover;
+            @include tablet {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            @include all-phone {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .hero-play-btn {
+                margin-top: 37px;
+                margin-left: 40px;
+            }
+        }
+    }
+}
+
 .hero-play-btn {
     color: $white-color;
     font-size: 20px;
     transition: $transition;
     display: inline-block;
+    &.play-btn-2 {
+        .video-btn {
+            color: $secondary-color;
+            background-color: $white-color;
+            font-size: 20px;
+            margin-right: 0;
+            padding-left: 3px;
+            box-shadow: 0 3px 6px 0 rgba($secondary-color, .1);
+        }
+    }
+
     @include tablet {
         margin-top: 20px;
     }
     @include all-phone {
         margin-top: 20px;
     }
-
     &:hover {
         color: $primary-color;
     }

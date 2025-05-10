@@ -5,6 +5,19 @@ nav {
 
     // home menu
     .main-menu {
+        &.main-menu-2 {
+            li {
+                &.has-submenu {
+                    &::after {
+                        color: $secondary-color;
+                    }
+                }
+                a {
+                    color: $secondary-color;
+                }
+            }
+        }
+
         li {
             display: inline-block;
             position: relative;
@@ -26,17 +39,14 @@ nav {
                     color: $white-color;
                     margin-left: 2px;
                     transition: $transition; 
-
                     @include tablet {
                         display: none;
                     } 
-
                     @include all-phone {
                         display: none;
                     }
                 }
             }
-
             a {
                 color: $white-color;
                 padding: 20px 0;
@@ -60,11 +70,9 @@ nav {
                     opacity: 0;
                     visibility: hidden;
                     transition: $transition;
-
                     li {
                         display: block;
                         margin-right: initial;
-
                         a {
                             color: $secondary-color;
                             display: block;
@@ -74,7 +82,6 @@ nav {
                                 color: $primary-color;
                             }
                         }
-
                     }
                 }
 
@@ -84,14 +91,12 @@ nav {
                             color: $primary-color;
                         }
                     }
-
                     a {
                         color: $primary-color;
                         @include tablet {
                             color: $white-color;
                         }
                     }
-
                     .submenu {
                         top: 115%;
                         opacity: 1;
@@ -103,7 +108,7 @@ nav {
     }
 }
 
-// phone menu
+// mobile menu
 .mean-container {
     .mean-nav {
         background: $primary-color;

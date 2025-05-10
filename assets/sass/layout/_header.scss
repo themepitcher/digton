@@ -1,10 +1,27 @@
 /* header */
+.header-area-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 .menu-area {
     padding: 10px 0;
     position: relative;
-    &.menu-area-1 {
-        background-color: $secondary-color;
-        border-bottom: 1px solid rgba($border-color, .1);
+    background-color: $secondary-color;
+    border-bottom: 1px solid rgba($border-color, .1);
+    &.menu-area-2 {
+        background-color: transparent;
+        border-bottom: 1px solid $border-color;
+        &.fixed-top {
+            background-color: $white-color;
+        }
+        .nav-right-content {
+            .search-btn {
+                color: $secondary-color;
+            }
+        }
     }
     &.fixed-top {
         position: fixed;
@@ -74,9 +91,13 @@
 .header-top {
     background-color: $secondary-color;
     padding: 10px 0;
-    .header-left {
+    .header-info {
         .header-email {
             margin-right: 30px;
+            @include portrait-phone {
+                display: block;
+                margin-bottom: 10px;
+            }
         }
         .email-icon,
         .location-icon {
@@ -85,17 +106,39 @@
         }
         a {
             color: $white-color;
+            transition: $transition;
+            &:hover {
+                color: $primary-color;
+            }
         }
     }
     
-    .header-right {
-        .header-social {
-            float: right;
-            li {
-                display: inline-block;
+    .header-social {
+        text-align: right;
+        @include tablet {
+            text-align: left;
+            margin-top: 10px;
+        }
+        @include all-phone {
+            text-align: left;
+            margin-top: 10px;
+        }
+        li {
+            display: inline-block;
+            +li {
                 margin-left: 20px;
-                a {
-                    color: $white-color;
+                @include tablet {
+                    margin-left: 10px;
+                }
+                @include all-phone {
+                    margin-left: 10px;
+                }
+            }
+            a {
+                color: $white-color;
+                transition: $transition;
+                &:hover {
+                    color: $primary-color;
                 }
             }
         }
