@@ -29,6 +29,12 @@
     }
 }
 
+@mixin phone-tablet() {
+    @media (max-width: 991.98px) {
+        @content;
+    }
+}
+
 @mixin desktop() {
     @media (min-width: 992px) and (max-width: 1199.98px) {
         @content;

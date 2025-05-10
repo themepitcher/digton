@@ -535,3 +535,25 @@
         right: 0;
     }
 }
+
+.brand-area {
+    background-color: $secondary-color;
+    .title {
+        color: $white-color;
+    }
+    .line {
+        display: block;
+        width: 220px;
+        height: 1px;
+        background-color: $white-color;
+        @include phone-tablet {
+            margin: 20px 0;
+        }
+    }
+}
+
+.brand-slider {
+    img {
+        width: auto;
+    }
+}

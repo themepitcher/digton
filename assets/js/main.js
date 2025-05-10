@@ -63,12 +63,31 @@
             prevArrow: '<span class="prev-arrow"><i class="fa-solid fa-arrow-left-long"></i></span>',
             nextArrow: '<span class="next-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>',
             responsive: [{
-                breakpoint: 992,
+                breakpoint: 991.98,
                 settings: {
                     arrows: false,
-                    }
-                },
-            ]
+                }
+            }]
+        });
+
+        // brand slider
+        $('.brand-slider').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            speed: 5000,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 0,
+            dots: false,
+            arrows: false,
+            cssEase: 'linear',
+            responsive: [{
+                breakpoint: 575.98,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }]
         });
 
     });
